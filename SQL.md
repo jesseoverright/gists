@@ -6,12 +6,15 @@
 ### Insert
 
     INSERT INTO table a (a.column, a.column2) VALUES (1, "Etc")
+
 ### Update
 
     UPDATE table a
+
 ### Upsert
 
     UPSERT
+    
 ### Delete
 
     DELETE
