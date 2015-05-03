@@ -4,6 +4,10 @@
 
     $ pwd
 
+### SED
+
+### Symlinking
+
 ### Reading log files
 
     $ tail -f /path/to/file.log
