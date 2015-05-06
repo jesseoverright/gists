@@ -9,7 +9,7 @@
 
 ### Update
 
-    UPDATE table a
+    UPDATE schema.table SET column1 = 'value', column2 = 1 WHERE column3 = 'value'
 
 ### Upsert
 
@@ -17,4 +17,4 @@
     
 ### Delete
 
-    DELETE
+    DELETE FROM schema.table WHERE column = 'value'
