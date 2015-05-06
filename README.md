@@ -1,6 +1,6 @@
 # Gists
 
-A collection of useful code snippets notes, and gists.
+A collection of useful code snippets, notes, and gists.
 
 - [SQL Gists](SQL.md)
 - [Git Gists](git.md)
