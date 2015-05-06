@@ -1,7 +1,21 @@
 ## Sql Gists
 ### Select
 
-    SELECT a.column, count(*) FROM table a WHERE a.column2 IN ( SELECT array_to_string(array_arg(b.column), ',') ) FROM table b WHERE b.column = a.column3 AND b.column2 LIKE '%items.')
+Conditional statements
+
+    SELECT
+        CASE WHEN column2 is null THEN 'All' ELSE column2 END results
+        COALESCE(column4, column3) as date      # column4 if not null, otherwise column 3
+    FROM schema.table
+
+Get count
+
+    SELECT a.column, count(*) FROM table a
+    WHERE a.column2 IN (
+        SELECT b.column FROM table b
+        WHERE b.column = a.column3 AND b.column2 LIKE '%items.'
+    )
+    GROUP BY 1
 
 ### Insert
 
@@ -14,7 +28,21 @@
 ### Upsert
 
     UPSERT
-    
+
 ### Delete
 
     DELETE FROM schema.table WHERE column = 'value'
+
+### Basic Joins
+
+    SELECT a.column1, a.column2, b.column1 FROM schema.table a
+    JOIN schema.other_table b
+    ON a.column3 = b.column2
+
+## Additional Examples
+
+### Windowing
+
+### Backup a table
+
+    CREATE TABLE new_table AS (SELECT * FROM old_table)

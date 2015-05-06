@@ -1,12 +1,28 @@
 ## Git Gists
 
-### Auto Commit
+### Commits
+
+Auto commit all changes
 
     $ git commit -a -m "Commit message"
 
+Revert local changes
+
+    $ git checkout -- /path/to/file
+
+Amend most recent commit message
+
+    $ git commit --amend -m "New Message"
+
 ### Visual History
 
+Pretty graph of all branches
+
     $ git log --graph --oneline --all --decorate
+
+Show diff of last commit 
+
+    $ git log -p -1
 
 ### Rewrite History
 
