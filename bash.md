@@ -8,6 +8,8 @@
 
 ### Symlinking
 
+    $ ln -s /path/to/folder linkname
+
 ### Reading log files
 
     $ tail -f /path/to/file.log

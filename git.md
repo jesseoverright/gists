@@ -1,5 +1,9 @@
 ## Git Gists
 
+### Auto Commit
+
+    $ git commit -a -m "Commit message"
+
 ### Visual History
 
     $ git log --graph --oneline --all --decorate
