@@ -45,3 +45,7 @@ Stashing changes
     $ git stash
     # pop out changes later
     $ git stash pop
+
+### Links
+
+- [Git branch details in bash prompt](http://code-worrier.com/blog/git-branch-in-bash-prompt/)
