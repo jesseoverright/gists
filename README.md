@@ -5,6 +5,7 @@ A collection of useful code snippets, notes, and gists.
 - [SQL Gists](SQL.md)
 - [Git Gists](git.md)
 - [Bash Gists](bash.md)
+- [SVN Gists](svn.md)
 - [PHP Gists](php.md)
 - [Java Gists](java.md)
 - [JavaScript Gists](javascript.md)
