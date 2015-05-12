@@ -68,7 +68,7 @@ Remote to Local
 
 ### Syncronize Folders (RSYNC)
 
-Remote to Local folder
+Contents of remote folder to local folder
 
     $ rsync -az username@remote.com:/path/to/folder/ /path/to/local/folder/
     # options
