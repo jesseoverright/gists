@@ -41,8 +41,13 @@ Get count
 
 ## Additional Examples
 
-### Windowing
+### Alter a table
+
+    ALTER TABLE schema.table ADD COLUMN columnname varchar(255);
+    ALTER TABLE schema.table ADD COLUMN columnname integer;
 
 ### Backup a table
 
     CREATE TABLE new_table AS (SELECT * FROM old_table)
+
+### Windowing

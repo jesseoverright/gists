@@ -30,9 +30,21 @@ Display ERRORS in last 1000 lines and the 10 lines after each error
 
     $ tail -1000 /path/to/file.log | grep ERROR -A 10
 
+### Copying Files Between Servers (SCP)
+
+Local to Remote
+
+    $ scp file.txt username@remote.com:/path/to/directory/
+
+Remote to Local
+
+    $ scp username@remote.com:/path/to/file.txt /path/to/local/file.txt
+
 ### Compressing Files
 
 Tar a directory
+
+    $ tar -czvf filename.tar.gz /path/to/directory
 
 Untar a tarball
 
@@ -54,17 +66,6 @@ Kill process #62111
     $ pwd
 
 ### SED
-
-
-### SCP
-
-Local to Remote
-
-    $ scp file.txt username@remote.com:/path/to/directory/
-
-Remote to Local
-
-    $ scp username@remote.com:/path/to/file.txt /path/to/local/file.txt
 
 ### Syncronize Folders (RSYNC)
 
