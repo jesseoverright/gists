@@ -41,6 +41,10 @@ Get count
 
 ## Additional Examples
 
+### Empty a table
+
+    TRUNCATE schema.table
+
 ### Alter a table
 
     ALTER TABLE schema.table ADD COLUMN columnname varchar(255);
@@ -49,5 +53,9 @@ Get count
 ### Backup a table
 
     CREATE TABLE new_table AS (SELECT * FROM old_table)
+
+### Add a user to a database
+
+    GRANT ALL ON schema.table TO username    
 
 ### Windowing
