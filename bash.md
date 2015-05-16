@@ -30,6 +30,10 @@ Display ERRORS in last 1000 lines and the 10 lines after each error
 
     $ tail -1000 /path/to/file.log | grep ERROR -A 10
 
+### Copying Files
+
+    cp -avr /path/to/source /path/to/destination    
+
 ### Copying Files Between Servers
 
 #### SCP
