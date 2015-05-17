@@ -55,6 +55,7 @@ Sync contents of a remote folder into a local folder
     -v                  verbose
     -n (or --dry-run)   dry run
     --delete            delete files
+    --progress          track progress
 
 Preview changes for syncinc current folder with remote location deleting files that don't exist locally
 
