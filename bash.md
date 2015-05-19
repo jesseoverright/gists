@@ -52,14 +52,21 @@ Sync contents of a remote folder into a local folder
 
     $ rsync -az username@remote.com:/path/to/folder/ /path/to/local/folder/
     # options
+    -a                  archive (keep permissions and date changes)
+    -z                  compress
     -v                  verbose
     -n (or --dry-run)   dry run
     --delete            delete files
     --progress          track progress
+    --size-only         only check filesize, not timestamp
 
 Preview changes for syncinc current folder with remote location deleting files that don't exist locally
 
     $ rsync -azv . username@remote.com:/path/to/folder/ --delete --dry-run
+
+Make a local backup of a photo library (or other folder)
+
+    rsync -azv /path/to/Photo\ Library/ /path/to/Photo\ Library\ backup/ --progress
 
 ### Compressing Files
 
