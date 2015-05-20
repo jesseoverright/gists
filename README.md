@@ -2,9 +2,9 @@
 
 A collection of useful code snippets, notes, and gists.
 
+- [Bash (Linux Command Line) Gists](bash.md)
 - [SQL Gists](SQL.md)
 - [Git Gists](git.md)
-- [Bash Gists](bash.md)
 - [SVN Gists](svn.md)
 - [PHP Gists](php.md)
 - [Java Gists](java.md)
@@ -14,4 +14,3 @@ A collection of useful code snippets, notes, and gists.
 - Apache Gists
 - [Node.js Gists](node.js.md)
 - Python Gists
-- React Gists

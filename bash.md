@@ -1,8 +1,4 @@
-## Bash Gists
-
-### Symlinking
-
-    $ ln -s /path/to/folder linkname
+# Bash Gists
 
 ### Finding files
 
@@ -32,11 +28,31 @@ Display ERRORS in last 1000 lines and the 10 lines after each error
 
 ### Copying Files
 
-    cp -avr /path/to/source /path/to/destination    
+    cp -avr /path/to/source /path/to/destination
+    # options
+    -a archive (keeps permissions and ownership)
+    -v verbose
+    -r recursively copy contents of folders
 
-### Copying Files Between Servers
+### Symlinking
 
-#### SCP
+Create a symbolic link to another folder.
+
+    $ ln -s /path/to/folder linkname
+
+## Remote Server Management
+
+### SSH
+
+Execute a command remotely
+
+    $ ssh username@remote.com 'ls -l /home/directory/'      #quotes optional
+
+Execute a command on a newline delimited list of servers
+
+    $ for i in `cat /path/to/server_list`; do echo $i && ssh $i ls -l /home/directory/; done
+
+### Copy Files to Remote Server (SCP)
 
 Local to Remote
 
@@ -46,7 +62,7 @@ Remote to Local
 
     $ scp username@remote.com:/path/to/file.txt /path/to/local/file.txt
 
-#### Syncronize Folders (RSYNC)
+### Syncronize Folders (RSYNC)
 
 Sync contents of a remote folder into a local folder
 
@@ -67,6 +83,8 @@ Preview changes for syncinc current folder with remote location deleting files t
 Make a local backup of a photo library (or other folder)
 
     rsync -azv /path/to/Photo\ Library/ /path/to/Photo\ Library\ backup/ --progress
+
+## Miscellaneous
 
 ### Compressing Files
 
@@ -99,16 +117,10 @@ Make file executable
 
     $ pwd
 
+### Switch Current User
+
+    $ su username
+
 ### SED
-
-### SSH
-
-Execute a command remotely
-
-    $ ssh username@remote.com 'ls -l /home/directory/'      #quotes optional
-
-Execute a command on a newline delimited list of servers
-
-    $ for i in `cat /path/to/server_list`; do echo $i && ssh $i ls -l /home/directory/; done
 
 ### Generate SSH Keys
