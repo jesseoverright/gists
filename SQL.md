@@ -1,6 +1,10 @@
 ## Sql Gists
 ### Select
 
+Get distinct results
+
+    SELECT DISTINCT a.column1, a.column2 FROM schema.table a
+
 Conditional statements
 
     SELECT
@@ -28,7 +32,7 @@ Where clause using results from another table
 
 Insert using data from another table
 
-    INSERT INTO table (column, column2) VALUES
+    INSERT INTO table (column, column2)
     SELECT column3, column4 FROM table2    
 
 ### Update
@@ -38,6 +42,14 @@ Insert using data from another table
 ### Upsert
 
     UPSERT
+
+Insert into table if entry doesn't exist
+
+    INSERT INTO table a (a.column, a.column2) 
+    SELECT 1, "Etc"
+    WHERE NOT EXISTS (
+        SELECT 1 FROM table a WHERE a.column = 1 AND a.column2 = "Etc"
+    )
 
 ### Delete
 
@@ -80,6 +92,10 @@ Left join will keep all data in left table regardless of data being present in t
 ### Backup a table
 
     CREATE TABLE new_table AS (SELECT * FROM old_table)
+
+### Delete a table
+
+    DROP TABLE schema.table
 
 ### Add a user to a database
 
