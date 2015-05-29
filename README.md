@@ -2,7 +2,7 @@
 
 A collection of useful code snippets, notes, and gists.
 
-- [Bash (Linux Command Line) Gists](bash.md)
+- [Bash Shell Gists](bash.md)
 - [SQL Gists](SQL.md)
 - [Git Gists](git.md)
 - [SVN Gists](svn.md)
