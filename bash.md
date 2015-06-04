@@ -106,6 +106,16 @@ Kill process #62111
 
     $ kill -9 62111
 
+### Disk Usage
+
+Get disk usage of current folder and subfolders
+
+    $ du -ch --max-depth=1 .
+
+Total disk drive utilization
+
+    $ df -h
+
 ### File permissions
 
 Make file executable
