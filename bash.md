@@ -16,7 +16,7 @@ Remove any log files that are more than a week old
     # or compress them
     $ find /path/to/logs/ -type f -name '*.log' -mtime +7 -exec gzip -q '{}' \;
 
-### Searching files
+### Searching files (GREP)
 
 Search an entire textfile for a string
 
@@ -34,7 +34,7 @@ Search for text and return the first 2 lines before and 5 lines after a found re
 
     $ grep -B 2 -A 5 'my string' /path/to/file
 
-#### Search command output (stdout)
+#### Search command output from stdout
 
 Filter the results of a directory listing
 
