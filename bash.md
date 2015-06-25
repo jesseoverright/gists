@@ -16,6 +16,30 @@ Remove any log files that are more than a week old
     # or compress them
     $ find /path/to/logs/ -type f -name '*.log' -mtime +7 -exec gzip -q '{}' \;
 
+### Searching files
+
+Search an entire textfile for a string
+
+    $ grep 'my string' /path/to/file
+
+Search all files of type in directory
+
+    $ grep 'mystring' *.txt
+
+Inverse search (return rows NOT containing search)
+
+    $ grep -v 'my string' /path/to/file
+
+Search for text and return the first 2 lines before and 5 lines after a found result
+
+    $ grep -B 2 -A 5 'my string' /path/to/file
+
+#### Search command output (stdout)
+
+Filter the results of a directory listing
+
+    $ ls -l | grep foldername
+
 ### Reading log files
 
 Display log file in stdout, continuing to watch for new log data
