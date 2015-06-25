@@ -139,6 +139,8 @@ Get disk usage of current folder and subfolders
 Total disk drive utilization
 
     $ df -h
+    # options
+    -h human readable filesize
 
 ### File permissions
 
