@@ -115,7 +115,21 @@ Using date intervals (week, day, minute etc.)
     SELECT * FROM schema.table
     WHERE edit_date BETWEEN date(now()) - interval '1 week' AND date(now())
 
+Selecting day only from datetime
+
+    SELECT date_trunc('day', date) as day,
+        count(*)
+    FROM schema.table
+    GROUP BY 1
+
 #### Time
+
+Grouping values by a time interval, ex. 30 minutes
+
+    SELECT date_trunc('hour', date) + date_part('minute', date)::int / 30 * interval '30 minutes' as 30 minute,
+        SUM(values) as total_value
+    FROM schema.table
+    GROUP BY 1
 
 ### Upsert
 
