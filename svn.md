@@ -21,6 +21,9 @@ Compare local changes to specific revision
     $what revision am I working on
     $ svn info | grep Revision
 
+    # show last three commits
+    $ svn log -l 3
+
 ### Revert a file
 
     $ svn revert /path/to/file

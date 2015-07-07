@@ -81,6 +81,8 @@ Execute a command on a newline delimited list of servers
 Local to Remote
 
     $ scp file.txt username@remote.com:/path/to/directory/
+    # options
+    -r recursive copy
 
 Remote to Local
 
