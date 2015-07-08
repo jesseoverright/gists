@@ -1,28 +1,34 @@
 # Regex Gists
 
-### Start of line (^)
+### Match exact string 
 
-    ^first
+Uses start of line (^) and end of line ($)
 
-### End of line ($)
+    ^searchvalue$
 
-    end$
+## Pattern Matching
 
-### Placeholders
-
-    ^/name/([a-zA-Z]+)/$ index.php?name=$1
-
-## Examples
-
-### One ore more ASCII characters
+### One or more ASCII characters
 
     [a-zA-Z0-9]+
-    # or zero or more
+
+or zero or more
+
     [a-zA-Z0-9]*
 
 ### 3 to 5 numbers
 
     [0-9]{3,5}
+
+### Negative regex (no numbers)
+
+    [^0-9]
+
+## Placeholders
+
+    ^/name/([a-zA-Z]+)/$ index.php?name=$1
+
+## Examples
 
 ### Phone Number
 
@@ -32,8 +38,6 @@
 
     ^[a-zA-Z0-9_-.+]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$
 
-### Negative regex (no numbers)
 
-    [^0-9]
 
 ## URL Routing Gists
