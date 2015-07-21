@@ -133,7 +133,19 @@ Grouping values by a time interval, ex. 30 minutes
 
 ### Upsert
 
-    UPSERT
+    WITH new_values (id, content_a, content_b) as (values (123, 'new content', 'more')),
+    upsert as ( 
+       UPDATE schema.table a
+       SET content_a = new.content_a,
+           content_b = new.content_b
+       FROM new_values new 
+       WHERE a.id = new.id
+       RETURNING a.*
+    ) 
+    INSERT INTO schema.table (id, content_a, content_b) 
+    SELECT id, content_a, content_b FROM new_values new 
+    WHERE NOT EXISTS
+    (SELECT 1 FROM upsert WHERE upsert.id = new.id);
 
 Insert into table if entry doesn't exist
 
