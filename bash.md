@@ -110,6 +110,11 @@ Make a local backup of a photo library (or other folder)
 
     rsync -azv /path/to/Photo\ Library/ /path/to/Photo\ Library\ backup/ --progress
 
+When the trailing slash is absent from the source directory, a folder of that name is created inside the destination
+
+    $ rsync -az /path/to/folder /path/to/local/
+    # syncs folder /path/to/local/folder/
+
 ## Miscellaneous
 
 ### Compressing Files
