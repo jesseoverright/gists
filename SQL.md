@@ -157,6 +157,8 @@ Insert into table if entry doesn't exist
 
 ### Transactions
 
+You can use transactions to perform a series of queries and roll them all back if problems occur
+
     BEGIN;
     --- queries
     COMMIT; -- to commit changes
