@@ -155,6 +155,13 @@ Insert into table if entry doesn't exist
         SELECT 1 FROM table a WHERE a.column = 1 AND a.column2 = "Etc"
     )
 
+### Transactions
+
+    BEGIN;
+    --- queries
+    COMMIT; -- to commit changes
+    ROLLBACK; -- or rollback changes
+
 ### Windowing
 
 ## Table Management
