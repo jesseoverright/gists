@@ -166,6 +166,14 @@ You can use transactions to perform a series of queries and roll them all back i
 
 ### Windowing
 
+## Converting Values
+
+### Concatonate strings
+    SELECT 'this' || 'and this'
+
+#### Convert Int to String
+    SELECT to_char(int_val)
+
 ## Table Management
 
 ### Create a table

@@ -137,6 +137,10 @@ Kill process #62111
 
     $ kill -9 62111
 
+### OS Version
+
+    $ cat /proc/version
+
 ### Disk Usage
 
 Get disk usage of current folder and subfolders
