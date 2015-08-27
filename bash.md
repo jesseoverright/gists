@@ -137,6 +137,12 @@ Kill process #62111
 
     $ kill -9 62111
 
+### Run a command as a background process
+
+Appending the ampersand to a command runs that command in the background which frees up your terminal to do other things
+
+    $ long_running_command_or_script &
+
 ### OS Version
 
     $ cat /proc/version
