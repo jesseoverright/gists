@@ -17,6 +17,13 @@ Insert using data from another table
 
     UPDATE schema.table SET column1 = 'value', column2 = 1 WHERE column3 = 'value'
 
+Update a table using values from another table
+
+    UPDATE schema.table AS a 
+    SET name = b.name
+    FROM schema.table_b AS b
+    WHERE a.id = b.id
+
 ### Select
 
     SELECT * from schema.table WHERE column1 in (1,2,3)
