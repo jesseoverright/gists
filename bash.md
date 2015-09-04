@@ -22,6 +22,10 @@ Search an entire textfile for a string
 
     $ grep 'my string' /path/to/file
 
+Regex search for two patterns
+    
+    $ grep 'this\|that' /path/to/file
+
 Search all files of type in directory
 
     $ grep 'mystring' *.txt
@@ -39,6 +43,11 @@ Search for text and return the first 2 lines before and 5 lines after a found re
 Filter the results of a directory listing
 
     $ ls -l | grep foldername
+    # options
+    -a all (including hidden files)
+    -l list
+    -h human readable file sizes
+    -S sort by size
 
 ### Reading log files
 
