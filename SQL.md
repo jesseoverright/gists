@@ -129,6 +129,12 @@ Selecting day only from datetime
     FROM schema.table
     GROUP BY 1
 
+    -- or use extract
+    SELECT extract(day from date) as day,
+        count(*)
+    FROM schema.table
+    GROUP BY 1
+
 #### Time
 
 Grouping values by a time interval, ex. 30 minutes
