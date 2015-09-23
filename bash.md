@@ -30,6 +30,10 @@ Search all files of type in directory
 
     $ grep 'mystring' *.txt
 
+Search all files in directory and it's subdirectories
+
+    $ grep -R 'mystring' /path/to/directory
+
 Inverse search (return rows NOT containing search)
 
     $ grep -v 'my string' /path/to/file
