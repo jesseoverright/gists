@@ -7,10 +7,10 @@ A collection of useful code snippets, notes, and gists.
 - [Git Gists](git.md)
 - [SVN Gists](svn.md)
 - [PHP Gists](php.md)
-- [Java Gists](java.md)
-- [JavaScript Gists](javascript.md)
 - [Regular Expression Gists](regex.md)
+- Java Gists(java.md)
+- JavaScript Gists(javascript.md)
 - CSS Gists
 - Apache Gists
-- [Node.js Gists](node.js.md)
+- Node.js Gists(node.js.md)
 - Python Gists
