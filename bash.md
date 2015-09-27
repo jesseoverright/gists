@@ -189,4 +189,8 @@ Make file executable
 
 ### SED
 
+Regex search and replace in a file
+
+sed -i 's/post_max_size = .*/post_max_size = 20M/g' /etc/php5/apache2/php.ini
+
 ### Generate SSH Keys
