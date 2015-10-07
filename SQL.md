@@ -218,6 +218,10 @@ Assigning defaults and constraints
     ALTER TABLE schema.table ADD COLUMN columnname INTEGER;
     ALTER TABLE schema.table ADD COLUMN columnname TEXT;
 
+Add a multi-column unique constraint to a table
+
+    ALTER TABLE schema.table ADD CONSTRAINT unique_entry UNIQUE (col1, col2);
+
 ### Backup a table
 
     CREATE TABLE new_table AS (SELECT * FROM old_table)
