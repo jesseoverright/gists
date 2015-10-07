@@ -8,9 +8,8 @@ A collection of useful code snippets, notes, and gists.
 - [SVN Gists](svn.md)
 - [PHP Gists](php.md)
 - [Regular Expression Gists](regex.md)
-- Java Gists(java.md)
-- JavaScript Gists(javascript.md)
+- Java Gists
+- JavaScript Gists
 - CSS Gists
 - Apache Gists
-- Node.js Gists(node.js.md)
 - Python Gists
