@@ -1,14 +1,42 @@
-## PHP Gists
-### Error Reporting
+# PHP Gists
+## Error Reporting
 [PHP Error Reporting Gist](https://gist.github.com/jesseoverright/76d47b4ff46953933c8c)
 
     <?php
     ini_set('display_errors',1);
     error_reporting(E_ALL);
 
-# Ubunto LAMP Provisioning
+## Curl POST request
 
-## install apache, mysql, php
+Makes a post request
+
+    <?php
+    $url = 'http://www.yourapi.com';
+    $post_values = array(
+        'sample1' => 'value',
+        'sample2' => 3,
+        'sample3' => array(1,2)
+    );
+
+    try {
+        $ch = curl_init($url);
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+        curl_setopt($ch, CURLOPT_POST, true);
+        // use http_build_query for x-www-form-urlencoded requests
+        // or array only for form-data requests
+        curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query($post_values));
+        $output = curl_exec($ch);
+    } catch (Exception $e) {
+        // error handling        
+    }
+
+    var_dump($output);
+    ?>
+
+
+## Ubunto LAMP Provisioning
+
+### install apache, mysql, php
 
     $ apt-get update
     $ apt-get install -y apache2 mysql-server-5.5 php5-mysql php5 php5-mcrypt # optional: php5-xdebug git curl
@@ -33,9 +61,7 @@
     $ export DEBIAN_FRONTEND=noninteractive
     $ apt-get install -y phpmyadmin 
 
-## Install Wordpress
-
-# install latest wordpress from git repo
+### Install Wordpress
 
 ```
     rm -rf /var/www/html
